@@ -1,28 +1,8 @@
-import { useNavigate, useSearchParams } from 'react-router-dom'
-import qs from 'query-string'
-/* eslint-disable react/prop-types */
-const CategoryBox = ({ label, icon: Icon, selected }) => {
-  console.log(selected)
-  const [params, setParams] = useSearchParams()
-  const navigate = useNavigate()
-  const handleClick = () => {
-    let currentQuery = {}
-    if (params) {
-      currentQuery = qs.parse(params.toString())
-    }
-    const updatedQuery = { ...currentQuery, category: label }
+import PropTypes from 'prop-types'
 
-    const url = qs.stringifyUrl({
-      url: '/',
-      query: updatedQuery,
-    })
-
-    navigate(url)
-  }
-  params.get('category')
+const CategoryBox = ({ label, icon: Icon }) => {
   return (
     <div
-      onClick={handleClick}
       className={`flex 
   flex-col 
   items-center 
@@ -32,12 +12,17 @@ const CategoryBox = ({ label, icon: Icon, selected }) => {
   border-b-2
   hover:text-neutral-800
   transition
-  cursor-pointer ${selected ? 'border-b-neutral-800 text-neutral-800' : ''}`}
+  cursor-pointer`}
     >
       <Icon size={26} />
-      <div className='text-sm font-medium'> {label}</div>
+      <div className='text-sm font-medium'>{label}</div>
     </div>
   )
+}
+
+CategoryBox.propTypes = {
+  label: PropTypes.string,
+  icon: PropTypes.elementType,
 }
 
 export default CategoryBox

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
-/* eslint-disable react/prop-types */
 const Card = ({ room }) => {
   return (
     <Link to={`/room/${room?._id}`} className='col-span-1 cursor-pointer group'>
@@ -42,6 +42,10 @@ const Card = ({ room }) => {
       </div>
     </Link>
   )
+}
+
+Card.propTypes = {
+  room: PropTypes.object,
 }
 
 export default Card

@@ -1,4 +1,4 @@
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types'
 const Heading = ({ title, subtitle, center }) => {
   return (
     <div className={center ? 'text-center' : 'text-start'}>
@@ -6,6 +6,12 @@ const Heading = ({ title, subtitle, center }) => {
       <div className='font-light text-neutral-500 mt-2'>{subtitle}</div>
     </div>
   )
+}
+
+Heading.propTypes = {
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  center: PropTypes.bool,
 }
 
 export default Heading

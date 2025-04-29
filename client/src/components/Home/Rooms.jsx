@@ -1,31 +1,25 @@
 import { useEffect, useState } from 'react'
 import Card from './Card'
 import Container from '../Shared/Container'
-import { useSearchParams } from 'react-router-dom'
 import Heading from '../Shared/Heading'
-import Loader from '../Shared/Loader'
+import LoadingSpinner from '../Shared/LoadingSpinner'
 
 const Rooms = () => {
   const [rooms, setRooms] = useState([])
-  const [params, setParams] = useSearchParams()
   const [loading, setLoading] = useState(false)
-  const category = params.get('category')
 
   useEffect(() => {
     setLoading(true)
-    fetch('./rooms.json')
+    fetch(`./rooms.json`)
       .then(res => res.json())
       .then(data => {
-        if (category) {
-          const filtered = data.filter(room => room.category === category)
-          setRooms(filtered)
-        } else setRooms(data)
-
+        setRooms(data)
         setLoading(false)
       })
-  }, [category])
+  }, [])
 
-  if (loading) return <Loader />
+  if (loading) return <LoadingSpinner />
+
   return (
     <Container>
       {rooms && rooms.length > 0 ? (

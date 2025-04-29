@@ -1,40 +1,59 @@
 [
   {
-    "_id": "654f6d935abba09d18da69cb",
-    "location": "Canterbury, United Kingdom",
-    "title": "Bumble Barn at Great Field Farm",
-    "from": "2023-11-27T18:00:00.000Z",
-    "to": "2023-11-29T18:00:00.000Z",
-    "price": 305,
-    "guests": "6",
-    "bedrooms": "3",
-    "bathrooms": "2",
-    "description": "Great Field Farm is set in 45 acres, including gardens, paddocks and the great field with different crops each year.\nBumble Barn is the newest addition to our eco-friendly  holiday lodges. Built to Passiv house standards with smart technology and a beautiful living sedum roof that bees love.\nThe views from the sitting room and patio over open fields and sky are stunning, with wildlife all around",
-    "image": "https://i.ibb.co/f1494DN/london.webp",
+    "_id": "664717d3e6931ab2b2a35655",
+    "location": "Pattaya, Thailand",
+    "category": "Beach",
+    "title": "A15 thebase Sky Pool 1 Bedroom 1/1/Downtown Direct Beach",
+    "to": "2024-05-21T18:00:00.000Z",
+    "from": "2024-05-19T18:00:00.000Z",
+    "price": "100",
+    "guests": "2",
+    "bathrooms": "1",
+    "bedrooms": "1",
     "host": {
       "name": "Shakil Ahmed Atik",
-      "image": "https://lh3.googleusercontent.com/a/ACg8ocJpxSpFQvm4fucJxMSOYG07EY-4eEqymED0zn2w8hBgHw=s96-c",
+      "image": "https://lh3.googleusercontent.com/a/ACg8ocJL_MZYn95fgATgHT_bWH8Em42gc8quAT57rhhHo4w9-lc-x8G-=s96-c",
       "email": "shakilatik.ph@gmail.com"
     },
-    "category": "Modern"
+    "description": "Seamlessly evisculate frictionless e-markets through tactical interfaces. Holisticly visualize viral potentialities without mission-critical services.",
+    "image": "https://i.ibb.co/BsLQWH6/992ceffe-86d2-42b0-93b8-c24427806cca.webp"
   },
   {
-    "_id": "654f6d935ee09d18da69cb",
-    "location": "Gaular, Norway",
-    "title": "Breathtaking Mountain views in cozy Birdbox",
-    "from": "2023-11-25T18:00:00.000Z",
-    "to": "2023-11-29T18:00:00.000Z",
-    "price": 269,
-    "guests": "2",
-    "bedrooms": "1",
-    "bathrooms": "1",
-    "description": "Enjoy the relaxed and comfortable enclosure of the Birdbox. Sleep right beside nature and its amazing  surroundings. Lay down and look at the spectacular mountains all around you. Put on your skis and have a breathtaking journey around the nearby trails. Hike down to Langelandsvatnet in the summer and enjoy swimming in energizing water. Your imagination is the limit for what you can experience.",
-    "image": "https://i.ibb.co/M6mBkXT/Avalon-Beach.webp",
+    "_id": "6647188ee6931ab2b2a35656",
+    "location": "Theog, India",
+    "category": "Countryside",
+    "title": "Deori Room 1BR Daafi w/Mountain View",
+    "to": "2024-05-30T18:00:00.000Z",
+    "from": "2024-05-27T18:00:00.000Z",
+    "price": "50",
+    "guests": "3",
+    "bathrooms": "2",
+    "bedrooms": "2",
     "host": {
       "name": "Shakil Ahmed Atik",
-      "image": "https://lh3.googleusercontent.com/a/ACg8ocJpxSpFQvm4fucJxMSOYG07EY-4eEqymED0zn2w8hBgHw=s96-c",
+      "image": "https://lh3.googleusercontent.com/a/ACg8ocJL_MZYn95fgATgHT_bWH8Em42gc8quAT57rhhHo4w9-lc-x8G-=s96-c",
       "email": "shakilatik.ph@gmail.com"
     },
-    "category": "Beach"
+    "description": "Credibly incentivize stand-alone technology rather than unique convergence. Intrinsicly incentivize distinctive niche markets for.",
+    "image": "https://i.ibb.co/Ptxx4q2/15110762-267f-4a08-88ae-2d9d3603284d.webp"
+  },
+  {
+    "_id": "664718fde6931ab2b2a35657",
+    "location": "Kamiminochi, Japan",
+    "category": "Desert",
+    "title": "Anoie home with a private sauna with spectacular views of Lake Nojiri",
+    "to": "2024-06-04T18:00:00.000Z",
+    "from": "2024-05-31T18:00:00.000Z",
+    "price": "140",
+    "guests": "4",
+    "bathrooms": "2",
+    "bedrooms": "2",
+    "host": {
+      "name": "Shakil Ahmed Atik",
+      "image": "https://lh3.googleusercontent.com/a/ACg8ocJL_MZYn95fgATgHT_bWH8Em42gc8quAT57rhhHo4w9-lc-x8G-=s96-c",
+      "email": "shakilatik.ph@gmail.com"
+    },
+    "description": "Efficiently coordinate flexible synergy and backward-compatible content. Energistically brand market-driven e-tailers for business models.",
+    "image": "https://i.ibb.co/Gp0Svsb/b2c0f556-f726-4db8-985f-25a668369fe7.webp"
   }
 ]
