@@ -81,7 +81,10 @@ async function run() {
 
     // Rooms related api
     app.get("/rooms", async (req, res) => {
-      const result = await roomsCollection.find().toArray();
+      const category = req.query.category;
+      let query = {};
+      if (category && category !== "null") query = { category };
+      const result = await roomsCollection.find(query).toArray();
       res.send(result);
     });
     // Get a single room
@@ -91,6 +94,7 @@ async function run() {
       const result = await roomsCollection.findOne(query);
       res.send(result);
     });
+
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
     console.log(
