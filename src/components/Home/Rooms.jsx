@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
 import Card from "./Card";
 import Container from "../Shared/Container";
@@ -9,7 +10,7 @@ import { useSearchParams } from "react-router-dom";
 
 const Rooms = () => {
   const axiosSecure = useAxiosSecure();
-  const [params, serParams] = useSearchParams();
+  const [params, setParams] = useSearchParams();
   const category = params.get("category");
   const { data: rooms = [], isLoading } = useQuery({
     queryKey: ["rooms", category],
