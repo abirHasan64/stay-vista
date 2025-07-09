@@ -6,6 +6,10 @@ import Login from "../pages/Login/Login";
 import SignUp from "../pages/SignUp/SignUp";
 import RoomDetails from "../pages/RoomDetails/RoomDetails";
 import PrivateRoute from "./PrivateRoute";
+import DashboardLayout from "../layouts/DashboardLayout";
+import Statistics from "../pages/Dashboard/Common/Statistics";
+import Addroom from "../pages/Dashboard/Host/Addroom";
+import Mylistitings from "../pages/Dashboard/Host/Mylistitings";
 
 export const router = createBrowserRouter([
   {
@@ -29,4 +33,22 @@ export const router = createBrowserRouter([
   },
   { path: "/login", element: <Login /> },
   { path: "/signup", element: <SignUp /> },
+  {
+    path: "/dashboard",
+    element: <DashboardLayout />,
+    children: [
+      {
+        index: true, // "index: true" lekha ar "path: /statistics" lekha eki kotha
+        element: <Statistics />,
+      },
+      {
+        path: "add-room",
+        element: <Addroom />,
+      },
+      {
+        path: "my-listings",
+        element: <Mylistitings />,
+      },
+    ],
+  },
 ]);
