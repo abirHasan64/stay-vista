@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import PropTypes from "prop-types";
 import queryString from "query-string";
 import { useNavigate, useSearchParams } from "react-router-dom";
@@ -6,11 +7,13 @@ const CategoryBox = ({ label, icon: Icon }) => {
   const category = params.get("category");
   const navigate = useNavigate();
   const handleClick = () => {
+    // 1. create query string
     let currentQuerry = { category: label };
     const url = queryString.stringifyUrl({
       url: "/",
       query: currentQuerry,
     });
+    // 2. set query string url
     navigate(url);
   };
   return (
